@@ -1,16 +1,14 @@
 # Credit Card Design with Svelte
 
-<img ></img>
-
 <br />
 <p align="left">
   <a href="https://github.com/tuncerrstm/svelte-credit-card">
-    <img width=520 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/firstFace.png"  alt="svelte-credit-card">
+    <img width=550 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/firstFace.png"  alt="svelte-credit-card">
   </a>
   <p align="left">
    <b> Credit Card Design with Svelte.</b>
     <br />
-      <img width=320 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/backFace.png"  alt="svelte-credit-card">
+      <img width=300 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/backFace.png"  alt="svelte-credit-card">
   </p>
 </p>
 
