@@ -8,7 +8,7 @@
   <p align="left">
    <b> Credit Card Design with Svelte.</b>
     <br />
-      <img width=300 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/backFace.png"  alt="svelte-credit-card">
+      <img width=320 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/backFace.png"  alt="svelte-credit-card">
   </p>
 </p>
 
