@@ -1,18 +1,53 @@
 <script>
+	import Inputmask from "inputmask";
+	import creditCardType from "credit-card-type"
+
+	let backface = false,
+			numberInput,
+			expireInput,
+			cvvInput
+
 	let card = {
 		number: '',
 		name: '',
 		expire: '',
 		cvv: ''
 	}
+
+	$: type = card.number ? creditCardType(card.number)?.[0]?.type : false
+
+	$: if (numberInput && expireInput && cvvInput) {
+		
+		Inputmask({
+			mask: '9999 9999 9999 9999',
+			placeholder: ' '
+		}).mask(numberInput)
+
+		Inputmask({
+			mask: '99/99',
+			placeholder: ' '
+		}).mask(expireInput)
+
+		Inputmask({
+			mask: '999',
+			placeholder: ' '
+		}).mask(cvvInput)
+	}
+
+	const addCard = () => {
+		console.log(card);
+	}
+
 </script>
 
 
-<div class="card">
+<div class="card" class:flip={backface}>
 	<div class="front">
 		<div class="card-top">
 			<img src="img/chip.svg" alt="">
-			<img src="img/mastercard.svg" alt="">
+			{#if type}
+			<img src="img/{type}.svg" alt="">
+			{/if}
 		</div>
 		<div class="card-number">
 			{card.number || '**** **** **** ****'}
@@ -35,10 +70,16 @@
 	</div>
 </div>
 
-<input type="text" bind:value={card.number} placeholder="Card Number"><br>
+<input type="text" bind:this={numberInput} bind:value={card.number} placeholder="Card Number"><br>
 <input type="text" bind:value={card.name} placeholder="Card Holder Name"><br>
-<input type="text" bind:value={card.expire} placeholder="Expiry Date"><br>
-<input type="text" bind:value={card.cvv} placeholder="CVV"><br>
+<input type="text" bind:this={expireInput} bind:value={card.expire} placeholder="Expiry Date"><br>
+<input type="text" bind:this={cvvInput} on:focus={() => backface = true} on:blur={() => backface = false} bind:value={card.cvv} placeholder="CVV"><br>
+<label>
+	<input type="checkbox" bind:checked={backface}>
+	Back face {backface ? 'hide' : 'show'}
+</label><br>
+
+<button on:click={addCard}>Save</button>
 
 <pre>{JSON.stringify(card)}</pre>
 
@@ -72,7 +113,7 @@
 		justify-content: space-between;
 	}
 	.card .front .card-number {
-		font-size: 24px;
+		font-size: 27px;
 		font-family: monospace;
 		color: #fff;
 		letter-spacing: -3px;
@@ -112,10 +153,10 @@
 	}
 
 
-	.card:hover .back{
+	.card.flip .back{
 		transform: rotateY(0);
 	}
-	.card:hover .front{
+	.card.flip .front{
 		transform: rotateY(-180deg);
 	}
 
