@@ -2,7 +2,7 @@
 
 <br />
 <p align="left">
-    <b> Credit Card First Face.</b>
+  <b> Credit Card First Face.</b>
   <br />
   <a href="https://github.com/tuncerrstm/svelte-credit-card">
     <img width=550 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/firstFace.png"  alt="svelte-credit-card">
