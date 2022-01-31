@@ -5,8 +5,8 @@
 <br />
 <p align="left">
   <a href="https://github.com/tuncerrstm/svelte-credit-card">
-    <img width=420 src="https://resimyukle.imageupload.workers.dev/AXQX86d8_firstPage.png" alt="svelte-credit-cardt">
-    <img width=400 src="https://resimyukle.imageupload.workers.dev/UuzGbMFW_backFace.png" alt="svelte-credit-card">
+    <img width=420 src="https://resimyukle.imageupload.workers.dev/AXQX86d8_firstPage.png">
+    
   </a>
   <p align="left">
    <b> Credit Card Design with Svelte.</b>
