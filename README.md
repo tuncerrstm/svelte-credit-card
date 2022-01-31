@@ -5,7 +5,7 @@
 <br />
 <p align="left">
   <a href="https://github.com/tuncerrstm/svelte-credit-card">
-    <img width=420 src="https://resimyukle.imageupload.workers.dev/AXQX86d8_firstPage.png">
+    <img width=420 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/firstFace.png"  alt="svelte-credit-card">
     
   </a>
   <p align="left">
@@ -15,8 +15,7 @@
 </p>
 
 <br />
-<img width=400 src="https://resimyukle.imageupload.workers.dev/UuzGbMFW_backFace.png">
-<img width=200 src="https://imageupload.io/i/A8exfWpYBq">
+<img width=400 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/backFace.png"  alt="svelte-credit-card">
 
 *Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
 
