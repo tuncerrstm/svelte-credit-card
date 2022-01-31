@@ -3,6 +3,7 @@
 <br />
 <p align="left">
   <b> Credit Card First Face.</b>
+  <br />
   <a href="https://github.com/tuncerrstm/svelte-credit-card">
     <img width=550 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/firstFace.png"  alt="svelte-credit-card">
   </a>
@@ -12,9 +13,9 @@
       <img width=320 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/backFace.png"  alt="svelte-credit-card">
   </p>
 </p>
-<b> Credit Card Design with Svelte.. </b>
-<br />
 
+<br />
+<b> Credit Card Design with Svelte.. </b>
 
 *Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
 
