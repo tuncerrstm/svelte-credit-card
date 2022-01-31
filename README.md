@@ -2,16 +2,17 @@
 
 <br />
 <p align="left">
+  <b> Credit Card First Face.</b>
   <a href="https://github.com/tuncerrstm/svelte-credit-card">
     <img width=550 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/firstFace.png"  alt="svelte-credit-card">
   </a>
   <p align="left">
-   <b> Credit Card Design with Svelte.</b>
+   <b>Credit Card Back Face</b>
     <br />
       <img width=320 src="https://raw.githubusercontent.com/tuncerrstm/svelte-credit-card/main/public/img/backFace.png"  alt="svelte-credit-card">
   </p>
 </p>
-
+<b> Credit Card Design with Svelte.. </b>
 <br />
 
 
