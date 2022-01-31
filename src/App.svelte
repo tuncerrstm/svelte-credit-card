@@ -1,3 +1,13 @@
+<script>
+	let card = {
+		number: '',
+		name: '',
+		expire: '',
+		cvv: ''
+	}
+</script>
+
+
 <div class="card">
 	<div class="front">
 		<div class="card-top">
@@ -5,24 +15,32 @@
 			<img src="img/mastercard.svg" alt="">
 		</div>
 		<div class="card-number">
-			**** **** **** 8475
+			{card.number || '**** **** **** ****'}
 		</div>
 		<div class="card-bottom">
 			<div>
 				<div class="key">Card Holder Name</div>
-				<div class="value">Tuncer Rüstemoğlu</div>
+				<div class="value">{card.name || '***'}</div>
 			</div>
 			<div>
 				<div class="key">Expiry Date</div>
-				<div class="value">12/22</div>
+				<div class="value">{card.expire || '***'}</div>
 			</div>
 		</div>
 	</div>
 	<div class="back">
-		arka taraf
+		<div class="card-back">
+			CVV <em>{card.cvv || '***'}</em>
+		</div>
 	</div>
 </div>
 
+<input type="text" bind:value={card.number} placeholder="Card Number"><br>
+<input type="text" bind:value={card.name} placeholder="Card Holder Name"><br>
+<input type="text" bind:value={card.expire} placeholder="Expiry Date"><br>
+<input type="text" bind:value={card.cvv} placeholder="CVV"><br>
+
+<pre>{JSON.stringify(card)}</pre>
 
 <style>
 	.card {
@@ -34,6 +52,7 @@
 	.card .front, .card .back{
 		width: inherit;
 		height: inherit;
+		box-sizing: border-box;
 		background: linear-gradient(31.58deg, #93278F -2.49%, #29ABE2 67.92%);
 		border-radius: 15px;
 		position: absolute;
@@ -53,11 +72,11 @@
 		justify-content: space-between;
 	}
 	.card .front .card-number {
-		font-size: 32px;
+		font-size: 24px;
 		font-family: monospace;
 		color: #fff;
 		letter-spacing: -3px;
-		margin-top: 45px;
+		margin-top: 25px;
 	}
 
 	.card .front .card-bottom {
@@ -78,6 +97,21 @@
 		font-weight: 600;
 
 	}
+
+	.card .back .card-back{
+		background-color: white;
+		padding: 20px;
+		margin-top: auto;
+		display: flex;
+		justify-content: end;
+	}
+
+	.card .back .card-back em {
+		font-weight: bold;
+		margin-left: 15px;
+	}
+
+
 	.card:hover .back{
 		transform: rotateY(0);
 	}
